@@ -1,6 +1,6 @@
 <!-- Richard Rosen II : Assignment 3.3 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>CSD 340 Web Development with HTML and CSS</title>
@@ -13,8 +13,8 @@
         </style>
 <h1>Assignment 3.3: Build a Web Page Exercise - Part 3</h1>
 </div>
-  <div class="row">
-    <div class="column">
+<div class="flex-container">
+  <div id="left" style="width: 45%; float: left">
 <h3>Top 10 Favorite Books</h3>
       <ol><li>Iron Prince: A Progression Sci-Fi Epic</li>
         <li>The Return of the King</li>
@@ -27,10 +27,21 @@
         <li>Hounded</li>
         <li>The Magician's Nephew</li>
       </ol>
-    </div>
   </div>
-<div class="row">
-    <div class="column">
+<div id="right" style="width: 45%; float: right">
       <h3>5 Things I've Learned Since the Course Started</h3>
+        <ul><li>Creation of CSS pages</li>
+            <li>Basic structure of HTML5 documents</li>
+            <li>Adding Google fonts to web pages</li>
+            <li>Control of boxes, margins and borders</li>
+            <li>Creation of GitHub pages</li>
+        </ul>
+</div>
+</div>
+<div class="last" style="width: 100%; margin-top: 60%;">
+    <a href="sam.html" Same Directory</a>
+    <a href="mod4/sam.html" Subdirectory</a>
+    <a href="../sam.html" Parent Directory</a>
+</div>
 </body>
 </html>
