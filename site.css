@@ -1,33 +1,9 @@
-body {
-	font-size: 16px; font-family: sans-serif;
-}
-h1 {
-	font-size: 16px; font-weight: bold; text-transform: uppercase; text-align: center; font-family: sans-serif;
-}
-h2 {
-	font-size: 16px; font-weight: 500; text-align: left; font-family:sans-serif; padding-top: 15px
-}
-p {
-	font-size: 16px; font-weight: normal; line-height: 1.4em; font-family:sans-serif;
-}
-
-address {
-	text-align: center; font-family: sans-serif;
-}
+container {margin-top:50px; margin-left:100px; margin-right:100px;}
+h1 {border:1px solid #D6A800; background-color:#7d4600; color: #a4b0f5; padding:10px;}
+h2 {border:1px solid #D6A800; background-color:#7d4600; color: #a4b0f5; padding:10px;}
+h3 {border:1px solid #D6A800; background-color:#7d4600; color: #a4b0f5; padding:10px;}
+h4 {border:1px solid #D6A800; background-color:#7d4600; color: #a4b0f5; padding:10px;}
 a:link {
-	text-decoration: none; color: #4F3674; font-size: 1.25em; font-weight: bold; text-align: center; font-family: sans-serif;
-}
-a:visited {
-	text-decoration:wavy; font-family: sans-serif;
-}
-a:hover { text-decoration: underline; font-family: sans-serif; color: #D6A800
-}
-a:active {
-	text-decoration: none; font-family: sans-serif;
-}
-span {
-	font-style: italic;  font-family: sans-serif;
-}
-.intro {
-	text-indent: 2em; font-family: sans-serif;
-}
+	text-decoration: none; color: #f58f29;}
+a:visited {color: #f58f29;}
+a:hover {color: #f58f29;}
