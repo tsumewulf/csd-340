@@ -1,0 +1,9 @@
+.h1 {text-align: center;}
+.image-gallery {margin-top: 10%}
+.grid-container {display: inline-grid}
+.left {width: 45%; grid-column-start: 1}
+.middle {width: 45%; grid-column: auto}
+.right {width: 45%; grid-column-end: 3}
+.h3 {text-align: center}
+.figure {text-align: center}
+.figcaption {font-style: italic; font-size: .75em}
