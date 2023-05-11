@@ -1,0 +1,27 @@
+<!-- Richard Rosen II : Assignment 9.3 -->
+<!DOCTYPE html>
+<html lang="en">
+<title>CSD 340 Development with HTML and CSS</title>
+<head>
+  <script>
+    var firstVariableValue = "Ohana";
+    var secondVariableValue = "change";
+    var thirdVariableValue = "Kronk";
+    var fourthVariableValue = "past";
+  </script>
+</head>
+<h1>Assignment 9.3: JavaScript - Part 1</h1>
+<body>
+  <p>"'<span id = "Ohana">_________</span>' means family, and family means no one gets left behind or forgotten." -Stitch, Lilo &amp; Stitch</p>
+  <p>“Life’s a little bit messy. We all make mistakes. No matter what type of animal you are, <span id = "change">_________</span> starts with you.” —Judy Hopps, Zootopia</p>
+  <p>“Pull the lever, <span id = "Kronk">_________</span>! Wrong lever! Why do we even have that lever?” —Yzma, The Emperor’s New Groove</p>
+  <p>"Oh yes, the <span id = "past">_________</span> can hurt. But from the way I see it, you can either run from it, or learn from it." -Rafiki, The Lion King</p>
+<p>
+    <button type="button" onclick="document.getElementById('Ohana').innerHTML = firstVariableValue">Ohana</button>
+    <button type="button" onclick="document.getElementById('change').innerHTML = secondVariableValue">change</button>
+    <button type="button" onclick="document.getElementById('Kronk').innerHTML = thirdVariableValue">Kronk</button>
+    <button type="button" onclick="document.getElementById('past').innerHTML = fourthVariableValue">past</button>
+    <br />
+  </p>
+</body>
+</html>
