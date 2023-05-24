@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSD 340 Web Development with HTML and CSS</title>
+  <style>
+    body {
+      background: radial-gradient(ellipse at center, #39FF14, #1400FF);
+      color: #FFFFFF;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      color: #000000;
+      text-align: center;
+    }
+
+    p {
+      color: #333333;
+      text-align: center;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    input[type="text"], button {
+      background-color: #333333;
+      color: #D0C800;
+      margin: 5px;
+    }
+
+    .divider {
+      margin-top: 20px;
+      width: 50%;
+      border-top: 3px dashed #FFFFFF;
+    }
+
+    .todo-list {
+      margin-top: 10px;
+    }
+
+    .todo-item {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Assignment 11.2: JavaScript - Part 3</h1>
+  <p>Welcome to my JavaScript To-Do List. Please enter the tasks on your To-Do list.</p>
+
+  <div class="button-group">
+    <input type="text" id="todoInput">
+    <button onclick="addToDo()">Add</button>
+    <button onclick="deleteLastEntry()">Delete Last Entry</button>
+    <button onclick="displayList()">Display</button>
+  </div>
+
+  <div class="divider"></div>
+
+  <div id="todoList" class="todo-list"></div>
+
+  <script src="RosenII_Mod11_2.js"></script>
+</body>
+</html>
