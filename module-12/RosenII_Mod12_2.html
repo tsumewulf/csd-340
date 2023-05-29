@@ -1,0 +1,102 @@
+<!-- Richard Rosen II : Assignment 12.2 -->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" type="text/css" href="RosenII_Mod_3_3.css">
+    <script>
+        function displayAscendingOrder() {
+            var books = [
+                "Iron Prince: A Progression Sci-Fi Epic",
+                "The Return of the King",
+                "Victernus",
+                "The Primal Hunter",
+                "The Trapped Mind Project",
+                "Black Sand Baron",
+                "Blue Curse",
+                "Dropship: A Near Future Thriller",
+                "Hounded",
+                "The Magician's Nephew"
+            ];
+
+            var sortedBooks = books.slice().sort();
+            var list = document.getElementById("bookList");
+            list.innerHTML = "";
+
+            for (var i = 0; i < sortedBooks.length; i++) {
+                var listItem = document.createElement("li");
+                listItem.textContent = sortedBooks[i];
+                list.appendChild(listItem);
+            }
+        }
+
+        function displayDescendingOrder() {
+            var books = [
+                "Iron Prince: A Progression Sci-Fi Epic",
+                "The Return of the King",
+                "Victernus",
+                "The Primal Hunter",
+                "The Trapped Mind Project",
+                "Black Sand Baron",
+                "Blue Curse",
+                "Dropship: A Near Future Thriller",
+                "Hounded",
+                "The Magician's Nephew"
+            ];
+
+            var sortedBooks = books.slice().sort().reverse();
+            var list = document.getElementById("bookList");
+            list.innerHTML = "";
+
+            for (var i = 0; i < sortedBooks.length; i++) {
+                var listItem = document.createElement("li");
+                listItem.textContent = sortedBooks[i];
+                list.appendChild(listItem);
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="container">
+    <style>
+        h1 {text-align: center;}
+    </style>
+    <h1>Assignment 12.2: JavaScript - Part 4</h1>
+</div>
+<div class="flex-container">
+    <div id="left" style="width: 45%; float: left">
+        <h3>Top 10 Favorite Books</h3>
+        <ol id="bookList">
+            <li>Iron Prince: A Progression Sci-Fi Epic</li>
+            <li>The Return of the King</li>
+            <li>Victernus</li>
+            <li>The Primal Hunter</li>
+            <li>The Trapped Mind Project</li>
+            <li>Black Sand Baron</li>
+            <li>Blue Curse</li>
+            <li>Dropship: A Near Future Thriller</li>
+            <li>Hounded</li>
+            <li>The Magician's Nephew</li>
+        </ol>
+        <button onclick="displayAscendingOrder()">Top to Bottom</button>
+        <button onclick="displayDescendingOrder()">Bottom to Top</button>
+    </div>
+    <div id="right" style="width: 45%; float: right">
+        <h3>5 Things I've Learned Since the Course Started</h3>
+        <ul>
+            <li>Creation of CSS pages</li>
+            <li>Basic structure of HTML5 documents</li>
+            <li>Adding Google fonts to web pages</li>
+            <li>Control of boxes, margins and borders</li>
+            <li>Creation of GitHub pages</li>
+        </ul>
+    </div>
+</div>
+<div class="last" style="width: 100%; margin-top: 60%;">
+    <a href="sam.html">Same Directory</a>
+    <a href="mod4/sam.html">Subdirectory</a>
+    <a href="../sam.html">Parent Directory</a>
+</div>
+</body>
+</html>
